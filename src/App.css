@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-siderbar {
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 220px !important;
+  flex: 0 0 220px !important;
+  min-width: 220px !important;
+  background: #404e67 !important; }
+  .custom-siderbar::-webkit-scrollbar {
+    width: 10px; }
+  .custom-siderbar::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: rgba(255, 255, 255, 0.3); }
+  .custom-siderbar .ant-menu {
+    background: #404e67 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px !important;
+    min-width: 220px !important; }
+@media (max-width: 1200px) {
+  .custom-siderbar {
+    position: absolute;
+    z-index: 2; }
+}
+
+.hide-sidebar {
+  height: 0 !important;
+  transition-duration: 0.3s;
+  display: none; }
+
+.custom-header-group .ant-menu-item-group-title {
+  text-transform: capitalize;
+  color: #999 !important;
+  font-family: "Open Sans", sans-serif; }
+
+.custom-header-group .sideMenuItem {
+  color: #dcdcdc !important;
+  padding: 0 15px;
+  line-height: 40px;
+  font-family: "Open Sans", sans-serif; }
+  .custom-header-group .sideMenuItem .anticon {
+    font-size: 14px; }
+
+.custom-header-group .ant-menu-item {
+  padding: 0 !important;
+  border-left: 4px solid transparent; }
+
+.custom-header-group .ant-menu-item-selected {
+  font-weight: bold;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to right, #fe9365, #feb798) !important; }
+  .custom-header-group .ant-menu-item-selected a {
+    color: white !important; }
+
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item {
+  padding: 0 !important; }
+
+.custom-header {
+  background: white !important;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.13);
+  height: 10vh;
+  position: relative;
+  padding-left: 0;
+  display: flex;
+  z-index: 999; }
+  .custom-header .custom-submenu {
+    color: #404e67;
+    font-family: "Open Sans", sans-serif;
+    width: max-content;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%); }
+    .custom-header .custom-submenu .anticon {
+      margin-right: 10px; }
+    .custom-header .custom-submenu span {
+      margin-right: 10px; }
+    .custom-header .custom-submenu .anticon-user {
+      font-size: 20px;
+      color: #FE8A7D; }
+  .custom-header > .ant-btn {
+    position: absolute;
+    top: 50%;
+    left: 244px;
+    transform: translateY(-50%);
+    margin-right: 10px; }
+
+.custom-content {
+  padding: 50px 20px !important;
+  height: 90vh;
+  overflow: auto; }
+.logo {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.13);
+  height: 100%;
+  width: 220px;
+  background: #404e67;
+  z-index: 99;
+  position: relative;
+  margin-right: 32px;
+  display: table; }
+  .logo .logo-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center; }
+    .logo .logo-wrapper .logo-content {
+      display: inline-block; }
+      .logo .logo-wrapper .logo-content > div {
+        vertical-align: middle; }
+      .logo .logo-wrapper .logo-content .logo-text {
+        display: inline-block;
+        color: #f3f4f5 !important;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        line-height: 25px;
+        margin: auto 10px; }
+        .logo .logo-wrapper .logo-content .logo-text span {
+          vertical-align: middle; }
+      .logo .logo-wrapper .logo-content .logo-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 29px;
+        display: inline-block; }
+      .logo .logo-wrapper .logo-content .logo-switch {
+        position: relative;
+        display: inline-block; }
+        .logo .logo-wrapper .logo-content .logo-switch .ant-switch-small {
+          vertical-align: middle; }
+        .logo .logo-wrapper .logo-content .logo-switch .ant-switch-checked {
+          background-color: rgba(43, 42, 42, 0.25) !important; }
+.dp-checkbox {
+  border: 1px solid #ccc;
+  padding: 10px; }
+.dp-checkbox .ant-checkbox-wrapper {
+  display: flex; }
